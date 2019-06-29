@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    boards (0.1.0)
+    boards (0.1.1)
 
 GEM
   remote: https://rubygems.org/
