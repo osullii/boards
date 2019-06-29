@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby -w
 puts "I'm an executable."
 
-require "colony/cli"
+require "boards/cli"
 
-Colony::Cli.start(ARGV)
+Boards::Cli.start(ARGV)

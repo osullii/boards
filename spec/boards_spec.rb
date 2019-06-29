@@ -1,6 +1,6 @@
-RSpec.describe Colony do
+RSpec.describe Boards do
   it "has a version number" do
-    expect(Colony::VERSION).not_to be nil
+    expect(Boards::VERSION).not_to be nil
   end
 
   it "does something useful" do

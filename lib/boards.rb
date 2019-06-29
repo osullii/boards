@@ -1,7 +1,7 @@
-require "colony/version"
-require "colony/cli"
+require "boards/version"
+require "boards/cli"
 
-module Colony
+module Boards
   class Error < StandardError; end
   # Your code goes here...
 end

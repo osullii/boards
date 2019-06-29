@@ -1,10 +1,10 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "colony/version"
+require "boards/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "colony"
-  spec.version       = Colony::VERSION
+  spec.name          = "boards"
+  spec.version       = Boards::VERSION
   spec.authors       = ["Irial O'Sullivan"]
   spec.email         = ["irialosullivan@gmail.com"]
 

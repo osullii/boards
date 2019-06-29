@@ -1,5 +1,5 @@
 require "thor"
-module Colony
+module Boards
   class Cli < Thor
 
     desc 'new NAME', 'generates a new directory named NAME for a new colony project, including boilerplate files and code.'
