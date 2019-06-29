@@ -1,4 +1,4 @@
-# Boarder
+# Boards
 
 The goal is to create a gem that facilitates the remote programming of Raspberry Pis. In particular - to develop a user friendly rubyesque DSL to describe the setup of a Raspberry Pi board.
 ## Installation
@@ -6,7 +6,7 @@ The goal is to create a gem that facilitates the remote programming of Raspberry
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'boarder'
+gem 'boards'
 ```
 
 And then execute:
@@ -15,17 +15,17 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install boarder
+    $ gem install boards
 
 ## Usage
 
 To create a new Colony project on your development machine.
 
-	$ boarder new <project_name>	
+	$ boards new <project_name>	
 
 ## Contributing
 
-This proejct is very new :-) . First commit on Sat 29/07/2019. Contributions welcome! Feel free to clone the repo in the meantime and submit a pull requests :-) . 
+Contributions welcome! This proejct is very new :-) . First commit on Sat 29/07/2019.  Feel free to clone the repo in the meantime and submit a pull requests :-) . 
 
 TODO: An online location for easy discussion of issues. 
 
