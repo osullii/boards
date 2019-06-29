@@ -1,6 +1,7 @@
 # Boards
 
 The goal is to create a gem that facilitates the remote programming of Raspberry Pis. In particular - to develop a user friendly rubyesque DSL to describe the setup of a Raspberry Pi board.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-To create a new Colony project on your development machine.
+To create a new Boards project on your development machine.
 
 	$ boards new <project_name>	
 
