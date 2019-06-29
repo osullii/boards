@@ -1,5 +1,4 @@
-#!/usr/bin/env ruby -w
-puts "I'm an executable."
+#!/usr/bin/env ruby
 
 require "boards/cli"
 

@@ -2,7 +2,7 @@ require "thor"
 module Boards
   class Cli < Thor
 
-    desc 'new NAME', 'generates a new directory named NAME for a new colony project, including boilerplate files and code.'
+    desc 'new NAME', 'generates a new directory named NAME for a new boards project, including stub files and boilerplate code.'
     def new(name)
       puts "Ahoy! You would like to generate a new project called #{name}!"
     end
