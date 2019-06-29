@@ -1,6 +1,6 @@
 # Colony
 
-This is a nascent project. The goal is to create a gem that facilitates the remote programming of Raspberry Pis. In particular - to develop a user friendly rubyesque DSL to describe the setup of a Raspberry Pi board.
+The goal is to create a gem that facilitates the remote programming of Raspberry Pis. In particular - to develop a user friendly rubyesque DSL to describe the setup of a Raspberry Pi board.
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-To create a new Colony project on your development machine. (In the author's case a Macbook Air)..
+To create a new Colony project on your development machine.
 
 	$ colony new <project_name>	
 
