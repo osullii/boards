@@ -20,6 +20,11 @@ Or install it yourself as:
 
     $ gem install boards
 
+To install the most up to date version of the gem in your application's Gemfile:
+
+```ruby
+gem 'boards', git: 'https://github.com/osullii/boards.git'
+```
 ## Usage
 
 To create a new Boards project on your development machine.
