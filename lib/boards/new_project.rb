@@ -1,5 +1,5 @@
 require "thor"
-require "boards/new_project"
+require "boards/version"
 module Boards
   class NewProject < Thor::Group
     include Thor::Actions
