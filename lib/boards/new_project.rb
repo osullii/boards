@@ -36,7 +36,7 @@ module Boards
           f.write 'git_source(:github) { |repo| "https://github.com/#{repo}.git" }'
           f.write "\n\n"
           f.write "# Bundle edge Boards instead: gem 'boards', github: 'osullii/boards'\n"
-          f.write "gem 'boards', #{Boards::VERSION}"
+          f.write "gem 'boards', '#{Boards::VERSION}'"
         end
         say "create \t#{dir_name}/#{file_name}", :green
       else
