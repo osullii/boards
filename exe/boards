@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
 require "boards/cli"
+require "boards/new_project"
 
 Boards::Cli.start(ARGV)
