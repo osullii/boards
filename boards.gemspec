@@ -1,5 +1,6 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require "boards/repo"
 require "boards/version"
 
 Gem::Specification.new do |spec|
@@ -10,14 +11,14 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{To facilitate remote programming of Raspberry Pis.}
   spec.description   = %q{A DSL and toolkit that allows programmers to specify setup of Raspberry Pis remotely.}
-  spec.homepage      = "https://github.com/osullii/colony"
+  spec.homepage      = "https://github.com/#{Boards::REPO}"
   spec.license       = "MIT"
 
   # spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/osullii/colony"
-  spec.metadata["changelog_uri"] = "https://github.com/osullii/colony"
+  spec.metadata["source_code_uri"] = "https://github.com/#{Boards::REPO}"
+  spec.metadata["changelog_uri"] = "https://github.com/#{Boards::REPO}"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
