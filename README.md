@@ -2,8 +2,6 @@
 
 The goal is to create a gem that facilitates the remote programming of Raspberry Pis. In particular - to develop a user friendly rubyesque DSL to describe the setup of a Raspberry Pi board.
 
-[![Gem Version](https://badge.fury.io/rb/boards.svg)](https://badge.fury.io/rb/boards)
-
 ## Installation
 
 Add this line to your application's Gemfile:
