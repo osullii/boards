@@ -20,7 +20,7 @@ Or install it yourself as:
 
     $ gem install boards
 
-To install the latest version of the gem in your application's Gemfile:
+Bundle edge boards instead? Write this in your application's Gemfile:
 
 ```ruby
 gem 'boards', git: 'https://github.com/osullii/boards.git'
