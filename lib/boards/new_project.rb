@@ -26,5 +26,22 @@ module Boards
         say "file \t#{dir_name}/#{file_name} already exists", :blue
       end
     end
+    
+    def create_gemfile
+      dir_name = name.downcase
+      file_name = 'Gemfile'
+      unless File.exists?("#{dir_name}/#{file_name}")
+        File.open("#{dir_name}/#{file_name}", "w") do |f| 
+          f.write "source 'https://rubygems.org'\n"
+          f.write 'git_source(:github) { |repo| "https://github.com/#{repo}.git" }'
+          f.write "\n\n"
+          f.write "# Bundle edge Boards instead: gem 'boards', github: 'osullii/boards'\n"
+          f.write "gem 'boards', #{Boards::VERSION}"
+        end
+        say "create \t#{dir_name}/#{file_name}", :green
+      else
+        say "file \t#{dir_name}/#{file_name} already exists", :blue
+      end
+    end
   end
 end

@@ -20,10 +20,10 @@ Or install it yourself as:
 
     $ gem install boards
 
-Bundle edge boards instead? Write this in your application's Gemfile:
+Bundle edge Boards instead? Uncomment this line in your application's Gemfile:
 
 ```ruby
-gem 'boards', git: 'https://github.com/osullii/boards.git'
+gem 'boards', github: 'osullii/boards'
 ```
 ## Usage
 
