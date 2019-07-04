@@ -20,7 +20,25 @@ module Boards
       dir_name = name.downcase
       file_name = 'setup.rb'
       unless File.exists?("#{dir_name}/#{file_name}")
-        File.open("#{dir_name}/#{file_name}", "w") {|f| f.write "# I am a setup file."}
+        File.open("#{dir_name}/#{file_name}", "w") do |f| 
+          f.write "# I am a setup file."
+        end
+        say "create \t#{dir_name}/#{file_name}", :green
+      else
+        say "file \t#{dir_name}/#{file_name} already exists", :blue
+      end
+    end
+    
+    def create_boards_rb
+      dir_name = name.downcase
+      file_name = 'boards.rb'
+      unless File.exists?("#{dir_name}/#{file_name}")
+        File.open("#{dir_name}/#{file_name}", "w")  do |f| 
+          f.write "# Define the setup of your different boards here.\n"
+          f.write "# For more information on the DSL that can be put in this file got to <boards wiki uri>.\n"
+          f.write "# TODO: Define DSL.\n"
+          f.write "# TODO: Update boards wiki.\n"
+        end
         say "create \t#{dir_name}/#{file_name}", :green
       else
         say "file \t#{dir_name}/#{file_name} already exists", :blue
