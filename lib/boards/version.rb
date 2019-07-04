@@ -1,3 +1,3 @@
 module Boards
-  VERSION = "0.1.1.4"
+  VERSION = "0.1.1.5"
 end
