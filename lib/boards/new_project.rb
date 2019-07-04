@@ -54,7 +54,7 @@ module Boards
           f.write "\n\n"
           f.write "# Bundle edge Boards instead:\n"
           f.write "# gem 'boards', github: 'osullii/boards'\n"
-          f.write "gem 'boards', '0.1.1.5'"
+          f.write "gem 'boards', '0.1.1.6'"
         end
         say "create \t#{dir_name}/#{file_name}", :green
       else
