@@ -1,6 +1,4 @@
 require "thor"
-require "boards/repo"
-require "boards/version"
 module Boards
   class NewProject < Thor::Group
     include Thor::Actions
@@ -54,7 +52,8 @@ module Boards
           f.write "source 'https://rubygems.org'\n"
           f.write 'git_source(:github) { |repo| "https://github.com/#{repo}.git" }'
           f.write "\n\n"
-          f.write "# Bundle edge Boards instead: gem 'boards', github: 'osullii/boards'\n"
+          f.write "# Bundle edge Boards instead:\n"
+          f.write "# gem 'boards', github: 'osullii/boards'\n"
           f.write "gem 'boards', '0.1.1.5'"
         end
         say "create \t#{dir_name}/#{file_name}", :green
