@@ -53,8 +53,8 @@ module Boards
           f.write 'git_source(:github) { |repo| "https://github.com/#{repo}.git" }'
           f.write "\n\n"
           f.write "# Bundle edge Boards instead:\n"
-          f.write "# gem 'boards', github: 'osullii/boards'\n"
-          f.write "gem 'boards', '0.1.1.6'"
+          f.write "# gem 'boards', github: '#{REPO}'\n"
+          f.write "gem 'boards', '#{VERSION}'"
         end
         say "create \t#{dir_name}/#{file_name}", :green
       else
