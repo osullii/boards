@@ -1,3 +1,4 @@
+require "irb"
 require "thor"
 require "boards/base"
 
@@ -15,8 +16,7 @@ module Boards
     
     desc 'console', 'opens an IRB console in the current directory'
     def console
-       require "irb"
-       IRB.start(__FILE__)
+       IRB.start("#{Dir.pwd}/exe/console")
     end
   end
 end

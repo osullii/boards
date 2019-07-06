@@ -1,6 +1,6 @@
 require "rpi_gpio"
 module Boards
-  def self.gpio
+  def gpio
     RPi::GPIO
   end
 end
