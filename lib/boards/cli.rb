@@ -12,5 +12,11 @@ module Boards
       create_boards_rb(dirname, 'boards.rb')
       create_gemfile(dirname, 'Gemfile')
     end
+    
+    desc 'console', 'opens an IRB console in the current directory'
+    def console
+       require "irb"
+       IRB.start(__FILE__)
+    end
   end
 end
